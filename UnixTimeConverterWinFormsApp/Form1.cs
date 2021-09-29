@@ -13,6 +13,11 @@ namespace UnixTimeConverterWinFormsApp
 
         private void Form1_Activated(object sender, EventArgs e)
         {
+            RefreshClipboardText();
+        }
+
+        private void RefreshClipboardText()
+        {
             var clipboardText = Clipboard.GetText();
 
             if (clipboardText != null &&
@@ -22,21 +27,18 @@ namespace UnixTimeConverterWinFormsApp
                 DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
                 dateTime = dateTime.AddSeconds(unixTimeStamp).ToLocalTime();
                 this.clipboardTimeTextBox.Text = dateTime.ToLocalTime().ToString("F");
+
+                this.clipboardTextBox.Text = clipboardText;
             }
             else
             {
-                this.clipboardTimeTextBox.Text = "No clipboard time";
+                this.clipboardTimeTextBox.Text = "Invalid Unix time";
             }
         }
 
         private static bool IsValidUnixTime(string text)
         {
             return Regex.IsMatch(text, "^[0-9]+$");
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void copyButton_Click(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace UnixTimeConverterWinFormsApp
 
         private void unixTimeTextBox_TextChanged(object sender, EventArgs e)
         {
-            this.copyButton.Text = "Copy";
+            this.copyButton.Text = "&Copy";
             this.copiedTimeTextBox.Text = "";
             this.copyButton.Enabled = IsValidUnixTime(this.unixTimeTextBox.Text);
         }
@@ -70,6 +72,16 @@ namespace UnixTimeConverterWinFormsApp
                 var unixTimestamp = (Int32)baseTime.ToUniversalTime().Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
                 this.unixTimeTextBox.Text = unixTimestamp.ToString();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            RefreshClipboardText();
         }
     }
 }
