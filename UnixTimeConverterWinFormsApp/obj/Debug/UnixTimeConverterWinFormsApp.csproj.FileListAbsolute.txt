@@ -1,0 +1,10 @@
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\bin\Debug\UnixTimeConverterWinFormsApp.exe.config
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\bin\Debug\UnixTimeConverterWinFormsApp.exe
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\bin\Debug\UnixTimeConverterWinFormsApp.pdb
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.csproj.AssemblyReference.cache
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.Properties.Resources.resources
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.csproj.GenerateResource.cache
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.csproj.CoreCompileInputs.cache
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.exe
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.pdb
+D:\Users\andyb\Documents\github\UnixTimeConverter\UnixTimeConverterWinFormsApp\obj\Debug\UnixTimeConverterWinFormsApp.Form1.resources
